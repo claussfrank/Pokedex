@@ -1,0 +1,15 @@
+header>nav>.nav-wrapper{
+    background-color: darkblue;
+}
+.row > div > .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-size{
+    width: 200px;
+    height: 200px;
+}
+.card>.card-title{
+    margin-top: 15%;
+}

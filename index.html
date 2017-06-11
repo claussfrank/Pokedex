@@ -9,6 +9,59 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <header>
+      <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo col s6 m3 l3">Pokedex</a>
+            </div>
+        </nav>
+        <div class="row">
+            <form  id="search-form" class="col s12 m3 offset-m9">
+                <div class="input-field waves-effect waves-light">
+                  <input id="search" type="search">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+            </form>  
+        </div>
+    </header>
+    <section id="listaDePokemones">
+        <div class="row">
+            <div class="col s12 m2">
+              <div class="card">
+                <div class="card-image img-size">
+                  <img src="assets/img/beedrill.png">
+                </div>
+                <div class="card-title">
+                    <h4>beedrill</h4>
+                </div>
+                <div class="card-action">
+                  <a href="#modal1">Ver Poderes</a>
+                </div>
+              </div>
+            </div>
+        </div>  
+    </section>
+    
+    <section id="modal-pokemon">
+       
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <h4>beedrill</h4>
+              <img  class="img-size"src="assets/img/beedrill.png">
+              <ul>
+                <li>Color: Green</li>
+                <li>Shope: Cuadruped</li>
+                <li>Habitat: Grassland</li>
+                <li>Genero: Seed</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a  class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+            </div>
+        </div>
+        
+    </section>
     
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>    
