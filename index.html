@@ -26,6 +26,7 @@
             </div>
         </header>
         <section id="listaDePokemones" class="row">
+<!--
             <div class="col s12 m2  pokemon">
                     <div class="card ">
                         <div class="card-image">
@@ -39,19 +40,20 @@
                         </div>
                     </div>
             </div>  
+-->
         </section>
 
         <section id="modal-pokemon">
 
             <div id="modal1" class="modal modal-fixed-footer">
                 <div class="modal-content">
-                    <h4>beedrill</h4>
-                    <img  class="img-size"src="assets/img/beedrill.png">
+                    <h4 id="nombrePokemon"></h4>
+                    <img id="imagenPokemon" class="img-size" alt="pokemonModal">
                     <ul>
-                        <li>Color: Green</li>
-                        <li>Shope: Cuadruped</li>
-                        <li>Habitat: Grassland</li>
-                        <li>Genero: Seed</li>
+                        <li>Color: <span id="colorPokemon"></span></li>
+                        <li>Shape: <span id="shapePokemon"></span></li>
+                        <li>Habitat: <span id="habitatPokemon"></span></li>
+                        <li>Genero: <span id="generoPokemon"></span></li>
                     </ul>
                 </div>
                 <div class="modal-footer">
