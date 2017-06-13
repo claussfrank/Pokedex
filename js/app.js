@@ -65,7 +65,7 @@ var modalPokemon = function(nombreImagen,nombrePokemon,pokemonColor,pokemonHabit
     
     $("#generoPokemon").text(pokemonGenera.genus);
 };
-<rama>
+
 
 
 $(document).on("click",".pokemon",caracteristicasPokemon);
