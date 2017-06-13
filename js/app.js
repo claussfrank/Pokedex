@@ -18,10 +18,10 @@ var plantillaPokemon = '<div class="col s12 m2 pokemon" data-url="//pokeapi.co/a
     '<img src="assets/img/**nombreFoto**.png">' +
     '</div>'+
     '<div class="card-title">'+
-    '<h4>**nombre**</h4>'+
+    '<h4><a href="#modal1" class="">**nombre**</a></h4>'+
     '</div>'+
     '<div class="card-action">'+
-    '<a href="#modal1" class="">Ver Caracteristicas </a>' +
+   
     '</div>'+
     '</div>'+
     '</div>'; 
@@ -42,27 +42,30 @@ var mostrarPersonajes = function(personajes){
 var caracteristicasPokemon= function(){
     var url = $(this).data("url");
     var nombrePokemon = $(this)[0].textContent
+    console.log($(this))
     
     $.getJSON(url,function(response){
         var pokemonColor = response.color;
         var pokemonGenera = response.genera[0];
         var pokemonHabitat = response.habitat.name;
         var pokemonShape = response.shape;
+        console.log(response);
         
-        modalPokemon(nombrePokemon,nombrePokemon,pokemonColor,pokemonGenera,pokemonHabitat,pokemonShape)
+        modalPokemon(nombrePokemon,nombrePokemon,pokemonColor,pokemonHabitat, pokemonShape,pokemonGenera)
        
     });
     console.log(url);   
 };
-var modalPokemon = function(nombreImagen,nombrePokemon,pokemonColor,pokemonHabitat, pokemonShape,pokemonGenera ){
-    $("#imagenPokemon").attr("src","assets/img/"+ nombreImagen +".png");
+var modalPokemon = function(nombreImagen,nombrePokemon,pokemonColor,pokemonHabitat, pokemonShape,pokemonGenera){
+    $("#imagenPokemon").attr("src","assets/img/"+nombreImagen+".png");
     $("#nombrePokemon").text(nombrePokemon);
     $("#colorPokemon").text(pokemonColor.name);
-    $("#shapePokemon").text(pokemonShape.name);
     $("#habitatPokemon").text(pokemonHabitat);
+    $("#shapePokemon").text(pokemonShape.name);
+    
     $("#generoPokemon").text(pokemonGenera.genus);
 };
-
+<rama>
 
 
 $(document).on("click",".pokemon",caracteristicasPokemon);
