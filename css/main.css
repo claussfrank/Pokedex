@@ -1,9 +1,9 @@
 header > nav > .nav-wrapper{
     background-color: darkblue;
+   
 }
 
 #listaDePokemones{
-    margin: 5%;
     display:inline; 
 }
 
