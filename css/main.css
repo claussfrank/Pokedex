@@ -1,15 +1,12 @@
-header>nav>.nav-wrapper{
+header > nav > .nav-wrapper{
     background-color: darkblue;
 }
-.row > div > .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+#listaDePokemones{
+    margin: 5%;
+    display:inline; 
 }
-.img-size{
-    width: 200px;
-    height: 200px;
-}
+
 .card>.card-title{
     margin-top: 15%;
 }
