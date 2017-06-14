@@ -6,7 +6,7 @@ var cargarPagina = function(){
 };
 
 var cargarPersonajes = function(){
-    var url = 'http://pokeapi.co/api/v2/pokemon/';
+    var url = 'https://pokeapi.co/api/v2/pokemon/';
     $.getJSON(url, function(response){
         var personajes = response.results;
         mostrarPersonajes(personajes);
